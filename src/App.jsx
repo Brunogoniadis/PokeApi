@@ -39,13 +39,12 @@ function App() {
 
 
   return (
+
     <AppContainer>
       <h1>Pokemon Evolution</h1>
       <PokemonContainer>
         <Allcontainer> 
-
         </Allcontainer>
-
         {allPokemons.map( (pokemonStats, index) => 
             <PokemonThumb
               key={index}
@@ -54,11 +53,10 @@ function App() {
               name={pokemonStats.name}
               type={pokemonStats.types[0].type.name}
             />)}
-
         <LoadMore onClick={()=> getAllPokemons()}></LoadMore>
-
       </PokemonContainer>
     </AppContainer>
+    
   )
 }
 

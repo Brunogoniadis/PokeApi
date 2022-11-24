@@ -2,10 +2,13 @@ import styled, { css } from "styled-components"
 
 const ThumbStyled = {
   grass: css`
-  background-color: green;
+  background-color: #00a65c;
+`,
+  ground: css `
+  background-color: #bf994e;
 `,
   rock: css`
-  background-color: rgb(148, 81, 81);
+  background-color: #858b96;
 `,
   ghost: css`
   background-color: rgb(247, 247, 247);
@@ -20,20 +23,24 @@ const ThumbStyled = {
   background-color: #e0a7f6;
 `,
   normal: css`
-  background-color: #F4F4F4;
+  background-color: #f1f1f1;
 `,
   fairy: css`
   background-color: rgba(255, 192, 203, 0.863);
 `,
   fire: css`
-  background-color: #FBE3DF;
-`,
-  grass: css`
-  background-color:#E2F9E1;
+  background-color: #e54120;
 `,
   water: css`
-  background-color:#E0F1FD;
+  background-color: #3991ad;
 `,
+  psychic: css`
+  background-color: #d8dfec;
+  `,
+  dark: css`
+  background-color: #939DA7;
+;
+  `
 
 }
 
@@ -43,11 +50,11 @@ export const ThumbContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 0 ;
+    padding: 1.5rem 0;
     margin: 0.3rem;
     border: 1px solid #efefef;
     border-radius: 1rem;
-    min-width: 160px;
+    width: 650px;
     text-align: center;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
 `

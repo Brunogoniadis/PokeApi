@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const  AppContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -8,8 +10,14 @@ export const  AppContainer = styled.div`
 ` 
 
 export const PokemonContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 `
-export const Allcontainer = styled.div`    
+export const Allcontainer = styled.div` 
+   
 `
 export const LoadMore = styled.button`
 
