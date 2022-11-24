@@ -32,10 +32,11 @@ function App() {
     createPokemonObject(data.results)
   }
 
- useEffect(() => {
-  getAllPokemons()
- }, [])
+  useEffect(() => {
+    getAllPokemons()
+  }, [])
   
+
 
   return (
     <AppContainer>
